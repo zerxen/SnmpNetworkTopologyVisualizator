@@ -1,0 +1,41 @@
+<USPLNL2ecsN1Lab001>display lldp neighbor-information list
+Chassis ID : * -- -- Nearest nontpmr bridge neighbor
+             # -- -- Nearest customer bridge neighbor
+             Default -- -- Nearest bridge neighbor
+System Name          Local Interface Chassis ID      Port ID
+USPLNL3N1Lab001      FGE1/0/1        bcea-fa00-213a  FortyGigE1/0/49            
+USPLNL3N1Lab002      FGE1/0/2        7848-59ee-88b1  FortyGigE1/0/50            
+USPLNDPecsN1Lab001   FGE1/0/3        d894-039a-db1c  FortyGigE1/1/1             
+USPLNDPecsN1Lab001   FGE1/0/4        d894-039a-db1c  FortyGigE1/1/2             
+usplnecsN1Lab055     FGE1/0/5        2c23-3aec-a1bd  FortyGigE1/1/1             
+usplnecsN1Lab055     FGE1/0/6        2c23-3aec-a1bd  FortyGigE1/1/2             
+usplnDSECSN1Lab001   XGE1/0/7:1      3822-d621-e200  Ten-GigabitEthernet1/3/0/17
+usplnDSECSN1Lab001   XGE1/0/7:2      3822-d621-e200  Ten-GigabitEthernet1/3/0/20
+usplnDSECSN1Lab001   XGE1/0/7:3      3822-d621-e200  Ten-GigabitEthernet1/3/0/22
+usplnDSECSN1Lab001   XGE1/0/7:4      3822-d621-e200  Ten-GigabitEthernet1/3/0/28
+usplnDSECSN1Lab001   XGE1/0/8:1      3822-d621-e200  Ten-GigabitEthernet1/3/0/29
+usplnDSECSN1Lab001   XGE1/0/8:2      3822-d621-e200  Ten-GigabitEthernet1/3/0/30
+usplnDSECSN1Lab001   XGE1/0/8:3      3822-d621-e200  Ten-GigabitEthernet1/4/0/28
+usplnDSECSN1Lab001   XGE1/0/8:4      3822-d621-e200  Ten-GigabitEthernet1/4/0/31
+USPLNL2ecsN1Lab001   FGE1/0/29       e8f7-24bc-b421  FortyGigE2/0/29            
+USPLNL2ecsN1Lab001   FGE1/0/30       e8f7-24bc-b421  FortyGigE2/0/30            
+USPLNL2ecsN1Lab001   FGE1/0/31       e8f7-24bc-b421  FortyGigE2/0/31            
+USPLNL2ecsN1Lab001   FGE1/0/32       e8f7-24bc-b421  FortyGigE2/0/32            
+USPLNL3N1Lab002      FGE2/0/1        7848-59ee-88b1  FortyGigE1/0/49            
+USPLNL3N1Lab001      FGE2/0/2        bcea-fa00-213a  FortyGigE1/0/50            
+USPLNDPecsN1Lab001   FGE2/0/3        d894-039a-db1c  FortyGigE2/1/1             
+USPLNDPecsN1Lab001   FGE2/0/4        d894-039a-db1c  FortyGigE2/1/2             
+usplnecsN1Lab055     FGE2/0/5        2c23-3aec-a1bd  FortyGigE2/1/1             
+usplnecsN1Lab055     FGE2/0/6        2c23-3aec-a1bd  FortyGigE2/1/2             
+usplnDSECSN1Lab001   XGE2/0/7:1      3822-d621-e200  Ten-GigabitEthernet2/3/0/17
+usplnDSECSN1Lab001   XGE2/0/8:1      3822-d621-e200  Ten-GigabitEthernet2/3/0/29
+usplnDSECSN1Lab001   XGE2/0/7:2      3822-d621-e200  Ten-GigabitEthernet2/3/0/18
+usplnDSECSN1Lab001   XGE2/0/7:3      3822-d621-e200  Ten-GigabitEthernet2/3/0/22
+usplnDSECSN1Lab001   XGE2/0/7:4      3822-d621-e200  Ten-GigabitEthernet2/3/0/28
+usplnDSECSN1Lab001   XGE2/0/8:2      3822-d621-e200  Ten-GigabitEthernet2/3/0/30
+usplnDSECSN1Lab001   XGE2/0/8:3      3822-d621-e200  Ten-GigabitEthernet2/4/0/28
+usplnDSECSN1Lab001   XGE2/0/8:4      3822-d621-e200  Ten-GigabitEthernet2/4/0/31
+USPLNL2ecsN1Lab001   FGE2/0/29       e8f7-24bc-b421  FortyGigE1/0/29            
+USPLNL2ecsN1Lab001   FGE2/0/30       e8f7-24bc-b421  FortyGigE1/0/30            
+USPLNL2ecsN1Lab001   FGE2/0/31       e8f7-24bc-b421  FortyGigE1/0/31            
+USPLNL2ecsN1Lab001   FGE2/0/32       e8f7-24bc-b421  FortyGigE1/0/32 

@@ -1,0 +1,1679 @@
+{
+    "VSR1000": {
+        "interfaces": [
+            {
+                "ifDescr": "GigabitEthernet1/0",
+                "index": 17,
+                "last_ifHCInOctets": "91158",
+                "last_ifHCOutOctets": "67786",
+                "last_timestamp": 1561987231,
+                "stats": [
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:43:53"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:43:59"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:46:24"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:46:30"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:46:35"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:46:41"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:46:47"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:46:52"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:46:58"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:47:03"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:47:09"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:47:14"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:47:20"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:47:25"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:47:31"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:01:55"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:02:33"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:03:13"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:03:28"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:03:34"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:03:39"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:05:10"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:05:35"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:05:41"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:05:46"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:05:52"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:05:57"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:19:39"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:19:58"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:20:04"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:20:09"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:20:14"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:20:20"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:20:25"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:20:31"
+                    }
+                ],
+                "utilization": 0
+            },
+            {
+                "ifDescr": "GigabitEthernet2/0",
+                "index": 33,
+                "last_ifHCInOctets": "84232",
+                "last_ifHCOutOctets": "43096",
+                "last_timestamp": 1561987231,
+                "stats": [
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:43:53"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:43:59"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:46:24"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:46:30"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:46:35"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:46:41"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:46:47"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:46:52"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:46:58"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:47:03"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:47:09"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:47:14"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:47:20"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:47:25"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:47:31"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:01:55"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:02:33"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:03:13"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:03:28"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:03:34"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:03:39"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:05:10"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:05:35"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:05:41"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:05:46"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:05:52"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:05:57"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:19:39"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:19:58"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:20:04"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:20:09"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:20:14"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:20:20"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:20:25"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:20:31"
+                    }
+                ],
+                "utilization": 0
+            },
+            {
+                "ifDescr": "GigabitEthernet3/0",
+                "index": 49,
+                "last_ifHCInOctets": "85734",
+                "last_ifHCOutOctets": "42916",
+                "last_timestamp": 1561987231,
+                "stats": [
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:43:53"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:43:59"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:46:24"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:46:30"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:46:35"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:46:41"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:46:47"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:46:52"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:46:58"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:47:03"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:47:09"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:47:14"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:47:20"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:47:25"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:47:31"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:01:55"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:02:33"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:03:13"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:03:28"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:03:34"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:03:39"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:05:10"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:05:35"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:05:41"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:05:46"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:05:52"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:05:57"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:19:39"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:19:58"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:20:04"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:20:09"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:20:14"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:20:20"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:20:25"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:20:31"
+                    }
+                ],
+                "utilization": 0
+            }
+        ]
+    },
+    "VSR1000-2": {
+        "interfaces": [
+            {
+                "ifDescr": "GigabitEthernet1/0",
+                "index": 17,
+                "last_ifHCInOctets": "62148",
+                "last_ifHCOutOctets": "67302",
+                "last_timestamp": 1561987231,
+                "stats": [
+                    {
+                        "InSpeed": 470,
+                        "OutSpeed": 408,
+                        "time": "2019-06-21 23:43:54"
+                    },
+                    {
+                        "InSpeed": 528,
+                        "OutSpeed": 486,
+                        "time": "2019-06-21 23:43:59"
+                    },
+                    {
+                        "InSpeed": 464,
+                        "OutSpeed": 409,
+                        "time": "2019-06-21 23:46:24"
+                    },
+                    {
+                        "InSpeed": 495,
+                        "OutSpeed": 349,
+                        "time": "2019-06-21 23:46:30"
+                    },
+                    {
+                        "InSpeed": 493,
+                        "OutSpeed": 351,
+                        "time": "2019-06-21 23:46:36"
+                    },
+                    {
+                        "InSpeed": 644,
+                        "OutSpeed": 389,
+                        "time": "2019-06-21 23:46:41"
+                    },
+                    {
+                        "InSpeed": 477,
+                        "OutSpeed": 319,
+                        "time": "2019-06-21 23:46:47"
+                    },
+                    {
+                        "InSpeed": 1041,
+                        "OutSpeed": 4,
+                        "time": "2019-06-21 23:46:52"
+                    },
+                    {
+                        "InSpeed": 1057,
+                        "OutSpeed": 3,
+                        "time": "2019-06-21 23:46:58"
+                    },
+                    {
+                        "InSpeed": 1009,
+                        "OutSpeed": 2,
+                        "time": "2019-06-21 23:47:04"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:47:09"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:47:14"
+                    },
+                    {
+                        "InSpeed": 929,
+                        "OutSpeed": 2,
+                        "time": "2019-06-21 23:47:20"
+                    },
+                    {
+                        "InSpeed": 1152,
+                        "OutSpeed": 1,
+                        "time": "2019-06-21 23:47:26"
+                    },
+                    {
+                        "InSpeed": 1416,
+                        "OutSpeed": 2,
+                        "time": "2019-06-21 23:47:31"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:01:55"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:02:33"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:03:13"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:03:29"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:03:34"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:03:40"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:05:10"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:05:35"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:05:41"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:05:46"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:05:52"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:05:57"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:19:39"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:19:59"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:20:04"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:20:10"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:20:14"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:20:20"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:20:25"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:20:31"
+                    }
+                ],
+                "utilization": 0
+            },
+            {
+                "ifDescr": "GigabitEthernet2/0",
+                "index": 33,
+                "last_ifHCInOctets": "34120",
+                "last_ifHCOutOctets": "23642",
+                "last_timestamp": 1561987231,
+                "stats": [
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:43:54"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:43:59"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:46:24"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:46:30"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:46:36"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:46:41"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:46:47"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:46:52"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:46:58"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:47:04"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:47:09"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:47:14"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:47:20"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:47:26"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:47:31"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:01:55"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:02:33"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:03:13"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:03:29"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:03:34"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:03:40"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:05:10"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:05:35"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:05:41"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:05:46"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:05:52"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:05:57"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:19:39"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:19:59"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:20:04"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:20:10"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:20:14"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:20:20"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:20:25"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:20:31"
+                    }
+                ],
+                "utilization": 0
+            },
+            {
+                "ifDescr": "GigabitEthernet3/0",
+                "index": 49,
+                "last_ifHCInOctets": "33978",
+                "last_ifHCOutOctets": "23642",
+                "last_timestamp": 1561987231,
+                "stats": [
+                    {
+                        "InSpeed": 408,
+                        "OutSpeed": 470,
+                        "time": "2019-06-21 23:43:54"
+                    },
+                    {
+                        "InSpeed": 485,
+                        "OutSpeed": 528,
+                        "time": "2019-06-21 23:43:59"
+                    },
+                    {
+                        "InSpeed": 409,
+                        "OutSpeed": 464,
+                        "time": "2019-06-21 23:46:24"
+                    },
+                    {
+                        "InSpeed": 348,
+                        "OutSpeed": 496,
+                        "time": "2019-06-21 23:46:30"
+                    },
+                    {
+                        "InSpeed": 351,
+                        "OutSpeed": 492,
+                        "time": "2019-06-21 23:46:36"
+                    },
+                    {
+                        "InSpeed": 389,
+                        "OutSpeed": 645,
+                        "time": "2019-06-21 23:46:41"
+                    },
+                    {
+                        "InSpeed": 318,
+                        "OutSpeed": 475,
+                        "time": "2019-06-21 23:46:47"
+                    },
+                    {
+                        "InSpeed": 4,
+                        "OutSpeed": 1044,
+                        "time": "2019-06-21 23:46:52"
+                    },
+                    {
+                        "InSpeed": 3,
+                        "OutSpeed": 1058,
+                        "time": "2019-06-21 23:46:58"
+                    },
+                    {
+                        "InSpeed": 2,
+                        "OutSpeed": 1005,
+                        "time": "2019-06-21 23:47:04"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:47:09"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:47:14"
+                    },
+                    {
+                        "InSpeed": 2,
+                        "OutSpeed": 932,
+                        "time": "2019-06-21 23:47:20"
+                    },
+                    {
+                        "InSpeed": 1,
+                        "OutSpeed": 1153,
+                        "time": "2019-06-21 23:47:26"
+                    },
+                    {
+                        "InSpeed": 2,
+                        "OutSpeed": 1416,
+                        "time": "2019-06-21 23:47:31"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:01:55"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:02:33"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:03:13"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:03:29"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:03:34"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:03:40"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:05:10"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:05:35"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:05:41"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:05:46"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:05:52"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:05:57"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:19:39"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:19:59"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:20:04"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:20:10"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:20:14"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:20:20"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:20:25"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:20:31"
+                    }
+                ],
+                "utilization": 0
+            }
+        ]
+    },
+    "VSR1000-3": {
+        "interfaces": [
+            {
+                "ifDescr": "GigabitEthernet1/0",
+                "index": 17,
+                "last_ifHCInOctets": "91098",
+                "last_ifHCOutOctets": "67751",
+                "last_timestamp": 1561987231,
+                "stats": [
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:43:54"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:43:59"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:46:25"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:46:30"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:46:36"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:46:42"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:46:47"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:46:53"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:46:58"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:47:04"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:47:09"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:47:15"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:47:20"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:47:26"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:47:31"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:01:55"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:02:33"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:03:13"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:03:29"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:03:34"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:03:40"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:05:10"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:05:35"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:05:41"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:05:46"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:05:52"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:05:57"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:19:39"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:19:59"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:20:04"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:20:10"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:20:14"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:20:20"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:20:25"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:20:31"
+                    }
+                ],
+                "utilization": 0
+            },
+            {
+                "ifDescr": "GigabitEthernet2/0",
+                "index": 33,
+                "last_ifHCInOctets": "83586",
+                "last_ifHCOutOctets": "43382",
+                "last_timestamp": 1561987231,
+                "stats": [
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:43:54"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:43:59"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:46:25"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:46:30"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:46:36"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:46:42"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:46:47"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:46:53"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:46:58"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:47:04"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:47:09"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:47:15"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:47:20"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:47:26"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:47:31"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:01:55"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:02:33"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:03:13"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:03:29"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:03:34"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:03:40"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:05:10"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:05:35"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:05:41"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:05:46"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:05:52"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:05:57"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:19:39"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:19:59"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:20:04"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:20:10"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:20:14"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:20:20"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:20:25"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:20:31"
+                    }
+                ],
+                "utilization": 0
+            },
+            {
+                "ifDescr": "GigabitEthernet3/0",
+                "index": 49,
+                "last_ifHCInOctets": "85734",
+                "last_ifHCOutOctets": "43202",
+                "last_timestamp": 1561987231,
+                "stats": [
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:43:54"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:44:00"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:46:25"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:46:30"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:46:36"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:46:42"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:46:47"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:46:53"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:46:58"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:47:04"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:47:09"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:47:15"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:47:20"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:47:26"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-06-21 23:47:31"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:01:55"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:02:33"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:03:13"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:03:29"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:03:34"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:03:40"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:05:10"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:05:35"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:05:41"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:05:46"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:05:52"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:05:57"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:19:39"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:19:59"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:20:04"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:20:10"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:20:14"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:20:20"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:20:25"
+                    },
+                    {
+                        "InSpeed": 0,
+                        "OutSpeed": 0,
+                        "time": "2019-07-01 15:20:31"
+                    }
+                ],
+                "utilization": 0
+            }
+        ]
+    }
+}

@@ -1,0 +1,75 @@
+{
+    "links": [
+        {
+            "highest_utilization": 0,
+            "source": "VSR1000",
+            "source_interfaces": [
+                "GigabitEthernet2/0"
+            ],
+            "source_interfaces_indes": [
+                33
+            ],
+            "speed": "1",
+            "target": "VSR1000-3",
+            "target_interfaces": [
+                "GigabitEthernet2/0"
+            ],
+            "target_interfaces_indes": [
+                33
+            ]
+        },
+        {
+            "highest_utilization": 0,
+            "source": "VSR1000",
+            "source_interfaces": [
+                "GigabitEthernet3/0"
+            ],
+            "source_interfaces_indes": [
+                49
+            ],
+            "speed": "1",
+            "target": "VSR1000-2",
+            "target_interfaces": [
+                "GigabitEthernet3/0"
+            ],
+            "target_interfaces_indes": [
+                49
+            ]
+        },
+        {
+            "highest_utilization": 0,
+            "source": "VSR1000-2",
+            "source_interfaces": [
+                "GigabitEthernet2/0"
+            ],
+            "source_interfaces_indes": [
+                33
+            ],
+            "speed": "1",
+            "target": "VSR1000-3",
+            "target_interfaces": [
+                "GigabitEthernet3/0"
+            ],
+            "target_interfaces_indes": [
+                49
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "group": "1",
+            "id": "VSR1000",
+            "image": "default.png"
+        },
+        {
+            "group": "1",
+            "id": "VSR1000-3",
+            "image": "default.png"
+        },
+        {
+            "group": "1",
+            "id": "VSR1000-2",
+            "image": "default.png"
+        }
+    ]
+}

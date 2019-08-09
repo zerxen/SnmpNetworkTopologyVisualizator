@@ -1,0 +1,185 @@
+{
+    "ifDescr": "GigabitEthernet3/0",
+    "index": 49,
+    "last_ifHCInOctets": "33978",
+    "last_ifHCOutOctets": "23642",
+    "last_timestamp": 1561987231,
+    "stats": [
+        {
+            "InSpeed": 408,
+            "OutSpeed": 470,
+            "time": "2019-06-21 23:43:54"
+        },
+        {
+            "InSpeed": 485,
+            "OutSpeed": 528,
+            "time": "2019-06-21 23:43:59"
+        },
+        {
+            "InSpeed": 409,
+            "OutSpeed": 464,
+            "time": "2019-06-21 23:46:24"
+        },
+        {
+            "InSpeed": 348,
+            "OutSpeed": 496,
+            "time": "2019-06-21 23:46:30"
+        },
+        {
+            "InSpeed": 351,
+            "OutSpeed": 492,
+            "time": "2019-06-21 23:46:36"
+        },
+        {
+            "InSpeed": 389,
+            "OutSpeed": 645,
+            "time": "2019-06-21 23:46:41"
+        },
+        {
+            "InSpeed": 318,
+            "OutSpeed": 475,
+            "time": "2019-06-21 23:46:47"
+        },
+        {
+            "InSpeed": 4,
+            "OutSpeed": 1044,
+            "time": "2019-06-21 23:46:52"
+        },
+        {
+            "InSpeed": 3,
+            "OutSpeed": 1058,
+            "time": "2019-06-21 23:46:58"
+        },
+        {
+            "InSpeed": 2,
+            "OutSpeed": 1005,
+            "time": "2019-06-21 23:47:04"
+        },
+        {
+            "InSpeed": 0,
+            "OutSpeed": 0,
+            "time": "2019-06-21 23:47:09"
+        },
+        {
+            "InSpeed": 0,
+            "OutSpeed": 0,
+            "time": "2019-06-21 23:47:14"
+        },
+        {
+            "InSpeed": 2,
+            "OutSpeed": 932,
+            "time": "2019-06-21 23:47:20"
+        },
+        {
+            "InSpeed": 1,
+            "OutSpeed": 1153,
+            "time": "2019-06-21 23:47:26"
+        },
+        {
+            "InSpeed": 2,
+            "OutSpeed": 1416,
+            "time": "2019-06-21 23:47:31"
+        },
+        {
+            "InSpeed": 0,
+            "OutSpeed": 0,
+            "time": "2019-07-01 15:01:55"
+        },
+        {
+            "InSpeed": 0,
+            "OutSpeed": 0,
+            "time": "2019-07-01 15:02:33"
+        },
+        {
+            "InSpeed": 0,
+            "OutSpeed": 0,
+            "time": "2019-07-01 15:03:13"
+        },
+        {
+            "InSpeed": 0,
+            "OutSpeed": 0,
+            "time": "2019-07-01 15:03:29"
+        },
+        {
+            "InSpeed": 0,
+            "OutSpeed": 0,
+            "time": "2019-07-01 15:03:34"
+        },
+        {
+            "InSpeed": 0,
+            "OutSpeed": 0,
+            "time": "2019-07-01 15:03:40"
+        },
+        {
+            "InSpeed": 0,
+            "OutSpeed": 0,
+            "time": "2019-07-01 15:05:10"
+        },
+        {
+            "InSpeed": 0,
+            "OutSpeed": 0,
+            "time": "2019-07-01 15:05:35"
+        },
+        {
+            "InSpeed": 0,
+            "OutSpeed": 0,
+            "time": "2019-07-01 15:05:41"
+        },
+        {
+            "InSpeed": 0,
+            "OutSpeed": 0,
+            "time": "2019-07-01 15:05:46"
+        },
+        {
+            "InSpeed": 0,
+            "OutSpeed": 0,
+            "time": "2019-07-01 15:05:52"
+        },
+        {
+            "InSpeed": 0,
+            "OutSpeed": 0,
+            "time": "2019-07-01 15:05:57"
+        },
+        {
+            "InSpeed": 0,
+            "OutSpeed": 0,
+            "time": "2019-07-01 15:19:39"
+        },
+        {
+            "InSpeed": 0,
+            "OutSpeed": 0,
+            "time": "2019-07-01 15:19:59"
+        },
+        {
+            "InSpeed": 0,
+            "OutSpeed": 0,
+            "time": "2019-07-01 15:20:04"
+        },
+        {
+            "InSpeed": 0,
+            "OutSpeed": 0,
+            "time": "2019-07-01 15:20:10"
+        },
+        {
+            "InSpeed": 0,
+            "OutSpeed": 0,
+            "time": "2019-07-01 15:20:14"
+        },
+        {
+            "InSpeed": 0,
+            "OutSpeed": 0,
+            "time": "2019-07-01 15:20:20"
+        },
+        {
+            "InSpeed": 0,
+            "OutSpeed": 0,
+            "time": "2019-07-01 15:20:25"
+        },
+        {
+            "InSpeed": 0,
+            "OutSpeed": 0,
+            "time": "2019-07-01 15:20:31"
+        }
+    ],
+    "utilization": 0
+}

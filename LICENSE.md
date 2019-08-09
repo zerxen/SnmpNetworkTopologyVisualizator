@@ -1,2 +1,2 @@
 
-Copyright (C) 2019 ZerXen
+Copyright (C) 2019 Peter Havrila

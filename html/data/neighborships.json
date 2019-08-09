@@ -1,0 +1,44 @@
+{
+    "VSR1000": [
+        {
+            "local_int_index": 33,
+            "local_intf": "GigabitEthernet2/0",
+            "neighbor": "VSR1000-3",
+            "neighbor_intf": "GigabitEthernet2/0"
+        },
+        {
+            "local_int_index": 49,
+            "local_intf": "GigabitEthernet3/0",
+            "neighbor": "VSR1000-2",
+            "neighbor_intf": "GigabitEthernet3/0"
+        }
+    ],
+    "VSR1000-2": [
+        {
+            "local_int_index": 49,
+            "local_intf": "GigabitEthernet3/0",
+            "neighbor": "VSR1000",
+            "neighbor_intf": "GigabitEthernet3/0"
+        },
+        {
+            "local_int_index": 33,
+            "local_intf": "GigabitEthernet2/0",
+            "neighbor": "VSR1000-3",
+            "neighbor_intf": "GigabitEthernet3/0"
+        }
+    ],
+    "VSR1000-3": [
+        {
+            "local_int_index": 33,
+            "local_intf": "GigabitEthernet2/0",
+            "neighbor": "VSR1000",
+            "neighbor_intf": "GigabitEthernet2/0"
+        },
+        {
+            "local_int_index": 49,
+            "local_intf": "GigabitEthernet3/0",
+            "neighbor": "VSR1000-2",
+            "neighbor_intf": "GigabitEthernet2/0"
+        }
+    ]
+}

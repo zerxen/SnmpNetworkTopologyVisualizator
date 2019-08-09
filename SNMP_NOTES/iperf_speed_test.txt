@@ -1,0 +1,8 @@
+# HOST
+ip route add 192.168.59.0/24 via 192.168.56.201
+
+# AMNESIA:
+iperf -s
+
+# HOST
+iperf -c 192.168.59.99 -d -t 3600

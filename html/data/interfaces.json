@@ -1,0 +1,98 @@
+{
+    "VSR1000": [
+        {
+            "ifAdminStatus": "up",
+            "ifDescr": "GigabitEthernet1/0",
+            "ifMtu": "1500",
+            "ifOperStatus": "up",
+            "ifPhysAddress": "08:00:27:07:f1:46",
+            "ifSpeed": "1000000000",
+            "ifType": "ethernetCsmacd",
+            "index": 17
+        },
+        {
+            "ifAdminStatus": "up",
+            "ifDescr": "GigabitEthernet2/0",
+            "ifMtu": "1500",
+            "ifOperStatus": "up",
+            "ifPhysAddress": "08:00:27:50:ff:81",
+            "ifSpeed": "1000000000",
+            "ifType": "ethernetCsmacd",
+            "index": 33
+        },
+        {
+            "ifAdminStatus": "up",
+            "ifDescr": "GigabitEthernet3/0",
+            "ifMtu": "1500",
+            "ifOperStatus": "up",
+            "ifPhysAddress": "08:00:27:65:06:f4",
+            "ifSpeed": "1000000000",
+            "ifType": "ethernetCsmacd",
+            "index": 49
+        }
+    ],
+    "VSR1000-2": [
+        {
+            "ifAdminStatus": "up",
+            "ifDescr": "GigabitEthernet1/0",
+            "ifMtu": "1500",
+            "ifOperStatus": "up",
+            "ifPhysAddress": "08:00:27:7f:e2:2b",
+            "ifSpeed": "1000000000",
+            "ifType": "ethernetCsmacd",
+            "index": 17
+        },
+        {
+            "ifAdminStatus": "up",
+            "ifDescr": "GigabitEthernet2/0",
+            "ifMtu": "1500",
+            "ifOperStatus": "up",
+            "ifPhysAddress": "08:00:27:f9:6e:db",
+            "ifSpeed": "1000000000",
+            "ifType": "ethernetCsmacd",
+            "index": 33
+        },
+        {
+            "ifAdminStatus": "up",
+            "ifDescr": "GigabitEthernet3/0",
+            "ifMtu": "1500",
+            "ifOperStatus": "up",
+            "ifPhysAddress": "08:00:27:cb:c2:c8",
+            "ifSpeed": "1000000000",
+            "ifType": "ethernetCsmacd",
+            "index": 49
+        }
+    ],
+    "VSR1000-3": [
+        {
+            "ifAdminStatus": "up",
+            "ifDescr": "GigabitEthernet1/0",
+            "ifMtu": "1500",
+            "ifOperStatus": "up",
+            "ifPhysAddress": "08:00:27:e2:da:20",
+            "ifSpeed": "1000000000",
+            "ifType": "ethernetCsmacd",
+            "index": 17
+        },
+        {
+            "ifAdminStatus": "up",
+            "ifDescr": "GigabitEthernet2/0",
+            "ifMtu": "1500",
+            "ifOperStatus": "up",
+            "ifPhysAddress": "08:00:27:06:fa:0b",
+            "ifSpeed": "1000000000",
+            "ifType": "ethernetCsmacd",
+            "index": 33
+        },
+        {
+            "ifAdminStatus": "up",
+            "ifDescr": "GigabitEthernet3/0",
+            "ifMtu": "1500",
+            "ifOperStatus": "up",
+            "ifPhysAddress": "08:00:27:10:b5:d5",
+            "ifSpeed": "1000000000",
+            "ifType": "ethernetCsmacd",
+            "index": 49
+        }
+    ]
+}

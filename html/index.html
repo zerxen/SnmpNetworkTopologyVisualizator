@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
+	<title></title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link href="layout.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="background.css" rel="stylesheet">
+
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Charm&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="wrapper">
+    <div class="page" id="page">
+        <!--
+        <header class="header">
+            <strong>NetworkGeekStuff.com was here</strong>
+        </header>-->
+
+        <div class="middle" id="middle">
+
+            <div class="container">
+                <main class="content">
+
+                    <!-- CONTENT HERE -->
+                    <div id="container" class="svg-container"></div>
+
+                </main><!-- .content -->
+            </div><!-- .container-->
+
+            <aside class="left-sidebar" id="left-sidebar">
+
+                <div style="width: 100%">
+                    <br>
+                    <a href=""><img src="img/site/TitleRibbon.png" align="right" valign="top" width="600px" height="150px"></a>
+                </div>
+                <br>
+
+                <!-- neighborship tables -->
+                <div align="middle" style="font-size: 18px; padding: 200px 0px 0px 0px;" class="infobox" id="infobox_header" >
+                    <!-- <font>CLICK ON DEVICE FOR DETAILED INFORMATION</font> -->
+                </div>
+                <div align="middle" style="font-size: 18px;" class="infobox" id="infobox">
+                </div>
+
+
+
+
+            </aside><!-- .left-sidebar -->
+
+            <aside class="right-sidebar" >
+                <!--<img src="img/site/NavigationRibbon.png" align="right" valign="top" width="600px" height="150px">-->
+                <div style="padding: 15px 15px 15px 35px;">
+                    <table style="width: 100%; ">
+                    <tbody>
+                    <tr>
+                        <td style="width: 30%; vertical-align: middle">
+                            <i class="fa fa-arrow-circle-left" id="left-button" style="font-size:48px"></i>
+                            <i class="fa fa-arrow-circle-up" id="up-button" style="font-size:48px"></i>
+                            <i class="fa fa-arrow-circle-down" id="down-button" style="font-size:48px"></i>
+                            <i class="fa fa-arrow-circle-right" id="right-button" style="font-size:48px"></i>
+                        </td>
+                        <td style="width: 30%; padding-left: 15px; padding-right: 15px;font-size: 15px;">
+                        <div class="slidecontainer" id="slidecontainer">
+                            <input type="range" min="100" max="3000" class="slider" id="scale_slider"><br>
+                            <div  align="middle">Scale range:<br><span id="scale_indicator"></span></div>
+                        </div>
+                    </td>
+                    <td style="width: 30%; padding-left: 15px; padding-right: 15px;font-size: 15px;">
+                        <div class="slidecontainer" id="slidecontainer">
+                            <input type="range" min="1" max="200" value="50" class="slider" id="force_slider"><br>
+                            <div  align="middle">Vertical force:<br><span id="force_indicator"></span></div>
+                        </div>
+                    </td>
+
+                    </tr>
+                    </tbody>
+                    </table>
+                </div>
+            </aside><!-- .right-sidebar -->
+
+        </div><!-- .middle-->
+
+        <footer class="footer">
+            <table><tr><td>
+                <a href="http://networkgeekstuff.com"><img src="img/logo_no_text.png"  width="100px" height="100px"></a>
+                <br>This software is sponsored by <a href="http://networkgeekstuff.com">networkgeekstuff.com</a><br>
+                Peter Havrila (c)2019, zerxen@networkgeekstuff.com<br>
+            </td><td>
+                </td></tr></table>
+        </footer><!-- .footer -->
+    </div><!-- .page -->
+
+</div><!-- .wrapper -->
+
+<!-- D3 graphs -->
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<!-- line charts -->
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<!-- scripts from our software -->
+<script src="scripts.js"></script>
+<script>
+
+// =============================
+// PRINTING DEVICE DETAILS TABLE
+// =============================
+
+// ====================
+// READING OF JSON FILE
+// ====================
+function readTextFile(file, callback) {
+    var rawFile = new XMLHttpRequest();
+    rawFile.overrideMimeType("application/json");
+    rawFile.open("GET", file, true);
+    rawFile.onreadystatechange = function() {
+        if (rawFile.readyState === 4 && rawFile.status == "200") {
+            callback(rawFile.responseText);
+        }
+    }
+    rawFile.send(null);
+}
+
+function viewChangeFunc(deviceid) {
+    var selectBox = document.getElementById("viewSelectBox");
+    var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+    OnViewChange(deviceid,selectedValue);
+}
+
+function OnClickDetails(deviceid, view = "neighbors"){
+    //alert("devicedetails: " + deviceid);
+    //usage:
+
+    cleanDivWithID("infobox_header")
+    printToDivWithID("infobox_header",deviceid);
+
+    view_select_box = "<img src=\"img/site/LeftPanelSeparation.png\">"
+
+    view_select_box += "<div>views: <select id=\"viewSelectBox\" onchange=\"viewChangeFunc(\'"+deviceid+"\');\">"
+    view_select_box += "<option value=\"neighbors\">Neighbors</option>"
+    view_select_box += "<option value=\"traffic\">Traffic</option>"
+    view_select_box += "</select></div><br>"
+    printToDivWithID("infobox_header",view_select_box)
+
+    // ## INITIATE FIRST PASSIVE VIEW CHANGE
+    OnViewChange(deviceid)
+}
+
+function OnViewChange(deviceid, view = "neighbors"){
+
+    // # Initial cleanup
+    cleanDivWithID("infobox")
+
+    // #############################
+    // # CREATING GRAPHS      #
+    // #############################
+    if (view == "traffic"){
+        console.log("we want network traffic graphs")
+
+        // # SIMPLIFIED
+        readTextFile("data/interfaces.json", function(text){
+            var data = JSON.parse(text);
+            for (var interface of data[deviceid]){
+                console.log("interface index: " + interface['index'] + " name: " + interface['ifDescr'])
+                var filename = "data/stats/" + deviceid + "_" + interface['index'] + ".json"
+                console.log("filename: " + filename)
+                readTextFile(filename, function(text){
+                    var interface = JSON.parse(text);
+                    var targetdiv = document.getElementById("infobox")
+                    //console.log(interface)
+                    var iDivGraph = document.createElement('div');
+                    iDivGraph.id = deviceid + "_" + interface['ifDescr'] + "_graph";
+                    targetdiv.appendChild(iDivGraph);
+                    draw_device_interface_graphs_to_div(interface,deviceid, iDivGraph)
+                });
+            }
+        });
+
+    }
+    // #############################
+    // # READING NEIGHBORS VIEW    #
+    // #############################
+    else if (view == "neighbors"){
+
+        // # READING NEIGHBORS
+        // ###################
+        readTextFile("data/neighborships.json", function(text){
+          var data = JSON.parse(text);
+          console.log(data);
+          console.log(deviceid);
+
+          bFoundMatch = 0;
+          for (var key in data) {
+            console.log("Key: " + key + " vs " + deviceid);
+
+            if ((deviceid.localeCompare(key)) == 0){
+              console.log("match!");
+              bFoundMatch = 1;
+              printToDivWithID("infobox",tableFromNeighbor(key,data));
+            }
+          }
+          if (!(bFoundMatch)){
+            warning_text = "<h4>The selected device id: ";
+            warning_text+= deviceid;
+            warning_text+= " is not in database!</h4>";
+            warning_text+= "This is most probably as you clicked on edge node ";
+            warning_text+= "that is not SNMP data gathered, try clicking on its neighbors.";
+            printToDivWithID("infobox",warning_text);
+          }
+        });
+
+        // # READING NEIGHBOR-LESS INTERFACES #
+        // ####################################
+        readTextFile("data/no_neighbor_interfaces.json", function(text){
+          var data = JSON.parse(text);
+          console.log(data);
+          console.log(deviceid);
+
+          bFoundMatch = 0;
+          for (var key in data) {
+            console.log("Key: " + key + " vs " + deviceid);
+
+            if ((deviceid.localeCompare(key)) == 0){
+              console.log("match!");
+              bFoundMatch = 1;
+              text = tableFromUnusedInterfaces(key,data);
+              printToDivWithID("infobox","<br><font style=\"font-size:12px;\" color=\"#943434\">Interfaces (only link state UP) without LLDP Neighbor:</font><br>" + text)
+            }
+          }
+          if (!(bFoundMatch)){
+            console.log("No interfaces without neighbor found");
+          }
+        });
+    };
+}
+
+// ####################################
+// # using input parameters returns
+// # HTML table with these inputs
+// ####################################
+function tableFromUnusedInterfaces(key,data){
+  text = "<table class=\"infobox2\">";
+  text+= "<thead><th>LOCAL INT.</th><th>TYPE</th><th>SPEED</th>";
+  text+= "</thead>";
+
+  for (var neighbor in data[key]) {
+    text+= "<tr>";
+
+    console.log("local_intf:" + data[key][neighbor]['ifDescr']);
+    text+= "<td>" + data[key][neighbor]['ifDescr'] + "</td>";
+    console.log("description:" + data[key][neighbor]['ifType']);
+    text+= "<td>" + data[key][neighbor]['ifType'] + "</td>";
+    console.log("actual_bandwith:" + data[key][neighbor]['ifSpeed']);
+    text+= "<td>" + data[key][neighbor]['ifSpeed'] + "</td>";
+
+    text+= "</tr>";
+  }
+
+  text+= "</table>";
+
+  return text;
+}
+
+// ####################################
+// # using input parameters returns
+// # HTML table with these inputs
+// ####################################
+function tableFromNeighbor(key,data){
+  text = "<table class=\"infobox\">";
+  text+= "<thead><th>LOCAL INT.</th><th>NEIGHBOR</th><th>NEIGHBOR'S INT</th>";
+  text+= "</thead>";
+
+  for (var neighbor in data[key]) {
+    text+= "<tr>";
+
+    console.log("local_intf:" + data[key][neighbor]['local_intf']);
+    text+= "<td>" + data[key][neighbor]['local_intf'] + "</td>";
+    console.log("neighbor_intf:" + data[key][neighbor]['neighbor_intf']);
+    text+= "<td>" + data[key][neighbor]['neighbor'] + "</td>";
+    console.log("neighbor:" + data[key][neighbor]['neighbor']);
+    text+= "<td>" + data[key][neighbor]['neighbor_intf'] + "</td>";
+
+    text+= "</tr>";
+  }
+
+  text+= "</table>";
+
+  return text;
+}
+
+
+// #######################################
+// ########### NAV BUTTONS ###############
+// #######################################
+document.getElementById("down-button").addEventListener("mousedown", navDownFunctionClick);
+document.getElementById("down-button").addEventListener("mouseup", navRelease);
+document.getElementById("up-button").addEventListener("mousedown", navUpFunctionClick);
+document.getElementById("up-button").addEventListener("mouseup", navRelease);
+document.getElementById("left-button").addEventListener("mousedown", navLeftFunctionClick);
+document.getElementById("left-button").addEventListener("mouseup", navRelease);
+document.getElementById("right-button").addEventListener("mousedown", navRightFunctionClick);
+document.getElementById("right-button").addEventListener("mouseup", navRelease);
+
+document.addEventListener("mouseup", navRelease);
+document.addEventListener("mouseout", navRelease);
+
+// ########### VARIABLES #################
+var MouseDownID = -1;
+var x_trans = 0
+var y_trans = 0
+
+// ########### TRANSFORM FUNCTION ########
+// Change element attribute
+function transform_delta(delta_x,delta_y){
+	var nodes_g = document.getElementById('nodes-g');
+	var links_g = document.getElementById('links-g');
+	console.log("Current transforms: " + x_trans + ":" + y_trans)
+	x_trans = x_trans + delta_x
+	y_trans = y_trans + delta_y
+	console.log("New transforms: " + x_trans + ":" + y_trans)
+	nodes_g.setAttribute("transform", "translate(" + x_trans + "," + y_trans +")")
+	links_g.setAttribute("transform", "translate(" + x_trans + "," + y_trans +")")
+}
+
+// ########### DOWN BUTTON ###############
+function navDownFunctionClick() {
+  document.getElementById("down-button").style["color"] = "red";
+  console.log("navDownFunctionClick")
+  if(MouseDownID==-1)  //Prevent multimple loops!
+     MouseDownID = setInterval(WhileNavDownMouseDown, 100 /*execute every 100ms*/);
+}
+function WhileNavDownMouseDown() {
+   /*here put your code*/
+   console.log("WhileNavDownMouseDown")
+   transform_delta(0,10)
+}
+
+// ########### UP BUTTON ###############
+function navUpFunctionClick() {
+  document.getElementById("up-button").style["color"] = "red";
+  console.log("navUpFunctionClick")
+  if(MouseDownID==-1)  //Prevent multimple loops!
+     MouseDownID = setInterval(WhileNavUpMouseDown, 100 /*execute every 100ms*/);
+}
+function WhileNavUpMouseDown() {
+   /*here put your code*/
+   console.log("WhileNavUpMouseDown")
+   transform_delta(0,-10)
+}
+// ########### LEFT BUTTON ###############
+function navLeftFunctionClick() {
+  document.getElementById("left-button").style["color"] = "red";
+  console.log("navLeftFunctionClick")
+  if(MouseDownID==-1)  //Prevent multimple loops!
+     MouseDownID = setInterval(WhileNavLeftMouseDown, 100 /*execute every 100ms*/);
+}
+function WhileNavLeftMouseDown() {
+   /*here put your code*/
+   console.log("WhileNavLeftMouseDown")
+   transform_delta(-10,0)
+}
+
+// ########### RIGHT BUTTON ###############
+function navRightFunctionClick() {
+  document.getElementById("right-button").style["color"] = "red";
+  console.log("navRightFunctionClick")
+  if(MouseDownID==-1)  //Prevent multimple loops!
+     MouseDownID = setInterval(WhileNavRightMouseDown, 100 /*execute every 100ms*/);
+}
+function WhileNavRightMouseDown() {
+   /*here put your code*/
+   console.log("WhileNavRightMouseDown")
+   transform_delta(10,0)
+}
+
+
+// ########### COMMON RELEASE BUTTON ###############
+function navRelease() {
+  console.log("navRelease")
+  document.getElementById("down-button").style["color"] = "black";
+  document.getElementById("up-button").style["color"] = "black";
+  document.getElementById("left-button").style["color"] = "black";
+  document.getElementById("right-button").style["color"] = "black";
+  clearInterval(MouseDownID)
+  MouseDownID = -1;
+}
+
+// ###########################
+// RESIZE SVG ON WINDOW RESIZE
+// ###########################
+
+var intervalID = setInterval(resize_svg_on_window_resize, 5000);
+function resize_svg_on_window_resize(){
+    console.log("resize_svg_on_window_resize TRIGGERED")
+    var svg_element = document.getElementById('primary-svg');
+    var original_viewBox = svg_element.getAttribute("viewBox")
+    var res = original_viewBox.split(" ");
+
+    // ### SELECT EITHER LEFT SIDEBAR OR WINDOW AS THE NEW HIGHT WHICHEVER IS BIGGER
+    windowHeight = window.innerHeight; //|| document.documentElement.clientHeight || document.body.clientHeight;
+    var rect = document.getElementById('left-sidebar').getBoundingClientRect();
+
+    if (rect.height > windowHeight){
+        var newClientHeight = rect.height;
+    } else {
+        var newClientHeight = windowHeight;
+    }
+
+    // ### SET THE HIGHT OF THE SVG AND SURROUNDING CONTAINER
+    console.log("new height: " + newClientHeight)
+    svg_element.setAttribute("viewBox", res[0] + " " + res[1] + " " + res[2] + " " + newClientHeight)
+    // Trying to set height of main SVG
+    document.getElementById('container').style.height = newClientHeight + "px";
+
+    slider_input()
+}
+
+
+// ########
+// # MAIN #
+// ########
+
+// #################################
+var svg = d3.select("div#container")
+    .append("svg")
+    .attr("id", "primary-svg")
+    .attr("preserveAspectRatio", "xMinYMin")
+    .attr("viewBox", "0 0 6000 6000")
+    .classed("svg-content", true);
+
+var svg_element = document.getElementById('primary-svg');
+var positionInfo = svg_element.getBoundingClientRect();
+    height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+    width = positionInfo.width ;
+    svg_element.setAttribute("preserveAspectRatio", "xMinYMin")
+    svg_element.setAttribute("viewBox", "0 0 " + width + " " + height)
+    console.log("Initial width:" + width)
+    console.log("Initial height:"+ height)
+
+// Trying to set height of main SVG
+document.getElementById('container').style.height = height + "px";
+
+// ###########  Scale Slider controls ##########
+var slider = document.getElementById("scale_slider");
+var output = document.getElementById("scale_indicator");
+output.value = width
+output.innerHTML = width;
+initial_scale = width
+
+slider.addEventListener("input", slider_input);
+
+function slider_input() {
+  var slider = document.getElementById("scale_slider");
+
+  output.innerHTML = slider.value;
+  console.log("Scale_input: " + slider.value)
+
+  // Change element attribute
+  var svg_element = document.getElementById('primary-svg');
+  var original_viewBox = svg_element.getAttribute("viewBox")
+  var res = original_viewBox.split(" ");
+  res[0] = (initial_scale - slider.value) / 2
+  wh_ratio = ( (window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight) / initial_scale )
+  res[1] = wh_ratio + res[0] * wh_ratio
+  console.log("view X: " + res[0] + " view Y: " + res[1])
+  svg_element.setAttribute("viewBox", res[0] + " " + res[1] + " " + slider.value + " " + slider.value)
+}
+
+// ###########  FORCE Slider controls ##########
+var force_slider = document.getElementById("force_slider");
+var force_output = document.getElementById("force_indicator");
+force_output.value = 50
+console.log("Force_output.value:" + force_output.value)
+force_output.innerHTML = force_output.value;
+
+force_slider.oninput = function() {
+  force_output.innerHTML = this.value;
+  console.log("force_output: " + this.value)
+
+  simulation.force("y", d3.forceY(height/2).strength(this.value / 1000))  //### PARAMETRIZED FORCE TO SLIDER
+  console.log("starting simulation");
+  simulation.alphaTarget(0.03).restart()
+  simulation.alpha(1).restart()
+  //delay
+  setTimeout(function(){ simulation.alphaTarget(0); console.log("Ending simulation"); }, "1000")
+}
+
+// ##### GRAPH POPULATION #######
+var color = d3.scaleOrdinal(d3.schemeCategory20);
+
+var simulation = d3.forceSimulation()
+    .force("link", d3.forceLink().id(function(d) { return d.id; }).distance(100).strength(0.001))
+    .force("charge", d3.forceManyBody().strength(-200).distanceMax(500).distanceMin(50))
+		.force("x", d3.forceX(function(d){
+			if(d.group === "1"){
+				return 5*(width*0.7)/6
+			} else if (d.group === "2"){
+				return 4*(width*0.7)/6
+			} else if (d.group === "3"){
+				return 3*(width*0.7)/6
+			} else if (d.group === "4"){
+				return 2*(width*0.7)/6
+			} else if (d.group === "5"){
+				return 1*(width*0.7)/6
+			} else {
+				return 0*(width*0.7)/6
+			}
+		 }).strength(1))
+    .force("y", d3.forceY(height/2).strength(force_output.value / 1000))  //### PARAMETRIZED FORCE TO SLIDER
+    .force("center", d3.forceCenter(width * 2/3, height / 2))
+    .force("collision", d3.forceCollide().radius(25));
+
+// ######################################
+// # Read graph.json and draw SVG graph #
+// ######################################
+function percentage_to_utilization_color(percentage){
+    if (percentage >= 75){
+        return "#FF0000"
+    } else if (percentage >= 50){
+        return "#FFA500"
+    } else {
+        return "#77cc77"
+    }
+}
+
+d3.json("data/graph.json", function(error, graph) {
+  if (error) throw error;
+
+  var link = svg.append("g")
+    .attr("id","links-g")
+    .selectAll("line")
+    .data(graph.links)
+    .enter()
+            .append("a")
+            .attr("target", '_blank')
+            .attr("xlink:href",  function(d) { return (window.location.href + '?node_a=' + d.source + "&node_b=" + d.target) })
+
+            .append("line")
+            .attr("stroke", function(d) { return percentage_to_utilization_color(d.highest_utilization); })   // # COLOR
+            .attr("stroke-width", function(d) { return Math.sqrt(parseInt(d.speed)) * 2; })  // # WIDTH
+            .attr("source", function(d) { d.source })
+            .attr("target", function(d) { d.target });
+
+  link.on("click", function(d,i){
+        d3.event.preventDefault();
+        d3.event.stopPropagation();
+        OnClickLinkDetails(d.source,d.target,d.source_interfaces_indes,d.target_interfaces_indes);
+        resize_svg_on_window_resize()
+      }
+  );
+
+  var node = svg.append("g")
+    .attr("class", "nodes")
+    .attr("id","nodes-g")
+    .selectAll("a")
+    .data(graph.nodes)
+    .enter().append("a")
+      .attr("target", '_blank')
+      .attr("xlink:href",  function(d) { return (window.location.href + '?device=' + d.id) });
+
+  node.on("click", function(d,i){
+        d3.event.preventDefault();
+        d3.event.stopPropagation();
+        OnClickDetails(d.id);
+        resize_svg_on_window_resize()
+      }
+  );
+
+  node.call(d3.drag()
+          .on("start", dragstarted)
+          .on("drag", dragged)
+          .on("end", dragended));
+
+  node.append("image")
+      .attr("xlink:href", function(d) { return ("img/" + d.image); })
+      .attr("width", 32)
+      .attr("height", 32)
+      .attr("x", - 16)
+      .attr("y", - 16)
+      .attr("fill", function(d) { return color(d.group); });
+
+  node.append("text")
+      .attr("font-size", "1em")
+      .attr("dx", 12)
+      .attr("dy", ".35em")
+      .attr("x", +8)
+      .text(function(d) { return d.id });
+
+  node.append("title")
+      .text(function(d) { return d.id; });
+
+  simulation
+      .nodes(graph.nodes)
+      .on("tick", ticked);
+
+  simulation.force("link")
+      .links(graph.links);
+
+  function ticked() {
+    link
+        .attr("x1", function(d) { return d.source.x; })
+        .attr("y1", function(d) { return d.source.y; })
+        .attr("x2", function(d) { return d.target.x; })
+        .attr("y2", function(d) { return d.target.y; });
+
+    node
+        .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"});
+  }
+});
+
+function dragstarted(d) {
+  if (!d3.event.active) simulation.alphaTarget(0.3).restart();
+  d.fx = d.x;
+  d.fy = d.y;
+}
+
+function dragged(d) {
+  d.fx = d3.event.x;
+  d.fy = d3.event.y;
+}
+
+function dragended(d) {
+  if (!d3.event.active) simulation.alphaTarget(0);
+  d.fx = null;
+  d.fy = null;
+}
+
+// ### LAST IN SCRIPT UPDATING SLIDER POSITION
+// ###########################################
+var elem = document.getElementById("scale_slider");
+var svg_element = document.getElementById('primary-svg');
+var positionInfo = svg_element.getBoundingClientRect();
+elem.value = positionInfo.width;
+var elem2 = document.getElementById("scale_indicator");
+elem2.value = positionInfo.width;
+
+
+</script>
+
+</body>
+</html>

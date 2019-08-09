@@ -1,0 +1,36 @@
+#System Description:
+..1.3.6.1.2.1.1
+
+LLDP-MIB
+1.0.8802.1.1.2
+
+LLDP-MIB - Remote systems table
+1.0.8802.1.1.2.1.4.1
+
+                            <time> <iftableidex>
+.iso.0.8802.1.1.2.1.4.1.1.4.26762   .1          .1 = INTEGER: 4
+.iso.0.8802.1.1.2.1.4.1.1.4.26764   .2          .1 = INTEGER: 4
+.iso.0.8802.1.1.2.1.4.1.1.4.26892   .5          .1 = INTEGER: 4
+.iso.0.8802.1.1.2.1.4.1.1.4.26892   .10         .1 = INTEGER: 4
+
+
+MIB-2 interfaces
+1.3.6.1.2.1.2.1.0 - num of interfaces integer
+1.3.6.1.2.1.2.2  - table itself
+snmptable -v 2c -c kreten123 10.200.0.38 -O fe 1.3.6.1.2.1.2.ifTable
+
+
+ifHCInOctets: 1.3.6.1.2.1.31.1.1.1.6 (64-bit Octets in counter)
+ifHCOutOctets: 1.3.6.1.2.1.31.1.1.1.10 (64-bit Octets out counter)
+ifHCInUcastPkts:  1.3.6.1.2.1.31.1.1.1.7 (64-bit Packets in counter)
+ifHCOutUcastPkts:  1.3.6.1.2.1.31.1.1.1.11 (64-bit Packets out counter)
+ifHighSpeed: 1.3.6.1.2.1.31.1.1.1.15 (An estimate of the interface's current bandwidth in units of 1Mbps)
+
+#In Octets
+snmpwalk -v 2c -c kreten123 192.168.56.200 -O fe 1.3.6.1.2.1.31.1.1.1.6
+#Out octets
+snmpwalk -v 2c -c kreten123 192.168.56.200 -O fe 1.3.6.1.2.1.31.1.1.1.10
+#Interfaces ID:
+snmpwalk -v 2c -c kreten123 192.168.56.200 -O fe 1.3.6.1.2.1.31.1.1.1.1
+
+

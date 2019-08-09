@@ -1,0 +1,6 @@
+this will generate the needed LLDP-MIB.py
+
+$ mibdump.py --destination-directory=. ./LLDP-MIB
+
+
+

@@ -1,0 +1,136 @@
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #e80a24;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #e80a24;
+  cursor: pointer;
+}
+
+.svg-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    /* #padding-bottom: 100%; */
+    vertical-align: top;
+    overflow: hidden;
+}
+.svg-content {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.links line {
+  stroke: #999;
+  stroke-opacity: 0.6;
+}
+
+div.infobox {
+    padding: 0px 0px 0px 15px;
+}
+
+table.infobox {
+  margin: 15px 0px 0px 0px;
+  width: 600px;
+  text-align: center;
+  background: rgba(255,235,143,0.5);
+}
+table.infobox td, table.infobox th {
+  border: 1px solid #948473;
+  padding: 4px 4px;
+}
+table.infobox tbody td {
+  font-size: 13px;
+}
+table.infobox thead {
+  background: #948473;
+  background: -moz-linear-gradient(top, #afa396 0%, #9e9081 66%, #948473 100%);
+  background: -webkit-linear-gradient(top, #afa396 0%, #9e9081 66%, #948473 100%);
+  background: linear-gradient(to bottom, #afa396 0%, #9e9081 66%, #948473 100%);
+}
+table.infobox thead th {
+  font-size: 17px;
+  font-weight: bold;
+  text-align: left;
+  border-left: 2px solid #948473;
+}
+table.infobox thead th:first-child {
+  border-left: none;
+}
+
+table.infobox tfoot td {
+  font-size: 16px;
+}
+
+
+.infobox2 {
+  /* margin: 15px 0px 0px 15px; */
+  font-size:  0.7em;
+  width: 600px;
+}
+
+table.infobox2 {
+  width: 600px;
+  text-align: center;
+  background: rgba(255,235,143,0.5);
+}
+table.infobox2 td, table.infobox2 th {
+  border: 1px solid #948473;
+  padding: 4px 4px;
+}
+table.infobox2 tbody td {
+  font-size: 13px;
+}
+table.infobox2 thead {
+  background: #943434;
+  background: -moz-linear-gradient(top, #af6767 0%, #9e4848 66%, #943434 100%);
+  background: -webkit-linear-gradient(top, #af6767 0%, #9e4848 66%, #943434 100%);
+  background: linear-gradient(to bottom, #af6767 0%, #9e4848 66%, #943434 100%);
+}
+table.infobox2 thead th {
+  font-size: 17px;
+  font-weight: bold;
+  color: #F0F0F0;
+  text-align: left;
+  border-left: 2px solid #948473;
+}
+table.infobox2 thead th:first-child {
+  border-left: none;
+}
+
+table.infobox2 tfoot td {
+  font-size: 16px;
+}
+
+.nodes circle {
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
